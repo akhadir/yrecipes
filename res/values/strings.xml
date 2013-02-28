@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Yahoo! Recipes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_init">MyMind</string>
+    <string name="freemindlauncher">FreeMind Launcher</string>
+    <string name="search_ghost_text">Search for a Recipe</string>
+	<string name="settings_button">Settings Button</string>
+	<string name="search_button">Search Button</string>
+	<string name="filter_timer">Filter Timer</string>
+	<string name="filter_ing">Filter for desired ingredients</string>
+	<string name="filter_ning">Filter for undesired ingredients</string>
+	<string name="filter_mtype">Filter for Meal type</string>
+	<string name="filter_diet">Filter for the type of diet</string>
+	<string name="choose_pref">Choose your homescreen preference?</string>
+</resources>

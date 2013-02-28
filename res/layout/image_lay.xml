@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ilayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/irecipy"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="72dp"
+        android:minWidth="72dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tlebel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:text="" />
+
+</LinearLayout>

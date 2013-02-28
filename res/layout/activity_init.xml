@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="3dp"
+    android:orientation="horizontal"
+    android:overScrollMode="ifContentScrolls" >
+
+<LinearLayout
+    android:id="@+id/SettingsPane"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="228dp"
+        android:layout_height="fill_parent"
+        android:background="#333333"
+        android:visibility="gone" >
+
+    </ListView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/MainPane"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:contentDescription="@string/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_settings" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.20"
+        android:ellipsize="none"
+        android:ems="10"
+        android:maxLines="1"
+        android:overScrollMode="never"
+        android:singleLine="true"
+        android:text="@string/search_ghost_text"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/search_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_search" />
+
+</LinearLayout>
+<LinearLayout
+     android:id="@+id/hslinearlayout1"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:paddingRight="20dp" >
+
+	<LinearLayout
+	    android:id="@+id/hslinearlayoutFilter"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="50dp"
+	    android:background="#F7F7F7"
+	    android:orientation="vertical"
+	    android:visibility="visible" >
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:contentDescription="@string/filter_timer"
+		    android:src="@drawable/ic_sfilter_timer" />
+
+		<ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:contentDescription="@string/filter_ing"
+		    android:src="@drawable/ic_sfilter_ing" />
+
+		<ImageView
+		    android:id="@+id/imageView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:contentDescription="@string/filter_ning"
+		    android:src="@drawable/ic_sfilter_ning" />
+
+		<ImageView
+		    android:id="@+id/imageView4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:contentDescription="@string/filter_mtype"
+		    android:src="@drawable/ic_sfilter_mtype" />
+
+		<ImageView
+		    android:id="@+id/imageView5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/filter_diet"
+		    android:src="@drawable/ic_sfilter_diet" />
+
+    </LinearLayout>
+	<HorizontalScrollView
+	    android:id="@+id/horizontalScrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent" >
+	
+        <LinearLayout
+            android:id="@+id/hslinearlayoutMain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >	
+		</LinearLayout>
+	</HorizontalScrollView>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

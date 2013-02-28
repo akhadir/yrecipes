@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:addStatesFromChildren="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp" 
+    android:paddingTop="20dp" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:contentDescription=""
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:overScrollMode="never"
+            android:src="@drawable/ic_def_img" />
+
+ 		<TextView
+ 		    android:id="@+id/textView1"
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_margin="3dp"
+ 		    android:clickable="true"
+ 		    android:ellipsize="marquee"
+ 		    android:focusable="true"
+ 		    android:marqueeRepeatLimit="marquee_forever"
+ 		    android:singleLine="true"
+ 		    android:textAppearance="?android:attr/textAppearanceMedium"
+ 		    android:textSize="@dimen/text_title"
+ 		    android:textStyle="bold" />
+ 		<TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:ellipsize="none"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="3dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/text_small" />
+      
+</LinearLayout>
