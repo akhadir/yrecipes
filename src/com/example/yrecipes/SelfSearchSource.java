@@ -1,4 +1,4 @@
-package com.example.yrecipes;
+package com.example.mymind;
 
 import java.net.URLDecoder;
 import java.net.URLEncoder;
@@ -35,8 +35,8 @@ public class SelfSearchSource {
             e.printStackTrace();
         }
 	}
-	public Hashtable<String,Object> getFilterData() {
-		Hashtable<String,Object> output = new Hashtable<String,Object>();
+	public DataFilter getFilterData() {
+		DataFilter output = new DataFilter();
 		Hashtable<String,String> sdata = new Hashtable<String,String>();
 		//String[] filters = {"holiday", "ingredient_w", "ingredient_wo", "mealtype", "collection", "rating", "totaltime", "sources"};
 		sdata = this.getFilters("refiner_totaltime");
@@ -80,8 +80,8 @@ public class SelfSearchSource {
 		return sdata;
 	}
 	
-	public Hashtable<Integer,Object> getRecipeData() {
-		Hashtable<Integer,Object> output = new Hashtable<Integer,Object>();
+	public DataRecipe getRecipeData() {
+		DataRecipe output = new DataRecipe();
 		Hashtable<String,String> sdata;
 		int i = 0;
 		//Element baseNodeE = baseNode.select("body").first();
